@@ -1,6 +1,6 @@
 {
       "name": "mircoName",
-      "version": "1.0.0",
+      "version": "623d6b0ffd14929645abe393",
       "private": true,
       "scripts": {
         "serve": "vue-cli-service serve",

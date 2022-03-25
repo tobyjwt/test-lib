@@ -20,29 +20,29 @@
 export default {
   components: {},
   props: [],
-  data () {
+  data() {
     return {
       formDataCustomer1Options: undefined,
       formData: {
-        customer1: 222
+        customer1: 222,
       },
       rules: {
         customer1: [{
           required: true,
           message: '请输入',
           trigger: 'blur'
-        }]
-      }
+        }],
+      },
     }
   },
   computed: {},
   watch: {},
-  created () {},
-  mounted () {},
+  created() {},
+  mounted() {},
   methods: {
-    submitFormElForm () {
-      this.$refs.elForm.validate(valid => {
-        if (!valid) return
+    submitFormElForm() {
+      this.$refs['elForm'].validate(valid => {
+        if (!valid) return;
         this.$axios({
           method: 'post',
           url: 'http://localhost:3000/test',
@@ -55,9 +55,9 @@ export default {
         })
       })
     },
-    resetFormElForm () {
-      this.$refs.elForm.resetFields()
-    }
+    resetFormElForm() {
+      this.$refs['elForm'].resetFields()
+    },
   }
 }
 

@@ -1,9 +1,11 @@
 const { defineConfig } = require('@vue/cli-service')
 
 const packageName = require('./package.json').name
+const version = require('./package.json').version
 
 module.exports = defineConfig({
-  publicPath: `https://cdn-app.myshopline.com/web/mirco/${packageName}`,
+  // publicPath: `https://cdn-app.myshopline.com/web/mirco/${packageName}`,
+  publicPath: `https://cdn-app.myshopline.com/web/mirco/${packageName}/${version}`,
   transpileDependencies: true,
   devServer: {
     headers: {
